@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "04BC52621C8437D00076C89B"
-               BuildableName = "&#x753b;&#x677f;&#x6d82;&#x9e26;.app"
-               BlueprintName = "&#x753b;&#x677f;&#x6d82;&#x9e26;"
-               ReferencedContainer = "container:&#x753b;&#x677f;&#x6d82;&#x9e26;.xcodeproj">
+               BuildableName = "AutoDraw.app"
+               BlueprintName = "AutoDraw"
+               ReferencedContainer = "container:AutoDraw.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "04BC52621C8437D00076C89B"
-            BuildableName = "&#x753b;&#x677f;&#x6d82;&#x9e26;.app"
-            BlueprintName = "&#x753b;&#x677f;&#x6d82;&#x9e26;"
-            ReferencedContainer = "container:&#x753b;&#x677f;&#x6d82;&#x9e26;.xcodeproj">
+            BuildableName = "AutoDraw.app"
+            BlueprintName = "AutoDraw"
+            ReferencedContainer = "container:AutoDraw.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "04BC52621C8437D00076C89B"
-            BuildableName = "&#x753b;&#x677f;&#x6d82;&#x9e26;.app"
-            BlueprintName = "&#x753b;&#x677f;&#x6d82;&#x9e26;"
-            ReferencedContainer = "container:&#x753b;&#x677f;&#x6d82;&#x9e26;.xcodeproj">
+            BuildableName = "AutoDraw.app"
+            BlueprintName = "AutoDraw"
+            ReferencedContainer = "container:AutoDraw.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "04BC52621C8437D00076C89B"
-            BuildableName = "&#x753b;&#x677f;&#x6d82;&#x9e26;.app"
-            BlueprintName = "&#x753b;&#x677f;&#x6d82;&#x9e26;"
-            ReferencedContainer = "container:&#x753b;&#x677f;&#x6d82;&#x9e26;.xcodeproj">
+            BuildableName = "AutoDraw.app"
+            BlueprintName = "AutoDraw"
+            ReferencedContainer = "container:AutoDraw.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

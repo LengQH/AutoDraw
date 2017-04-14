@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  画板涂鸦
+//  AutoDraw
 //
 //  Created by 冷求慧 on 16/2/29.
 //  Copyright © 2016年 gdd. All rights reserved.
@@ -23,7 +23,7 @@
 }
 #pragma mark 一些设置
 -(void)someSet{
-    self.title=@"画板涂鸦";
+    self.title=@"AutoDraw";
     self.cusView.lineWidthFloat=1.0;// 设置默认的宽度
     self.cusView.lineColor=[UIColor darkGrayColor];//设置默认的颜色
     windows=[[UIApplication sharedApplication]keyWindow];
