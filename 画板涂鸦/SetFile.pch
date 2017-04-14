@@ -1,0 +1,20 @@
+
+//
+//  SetFile.pch
+//  画板涂鸦
+//
+//  Created by 冷求慧 on 16/3/1.
+//  Copyright © 2016年 gdd. All rights reserved.
+//
+
+#ifndef SetFile_pch
+#define SetFile_pch
+
+#import "MBProgressHUD+MJ.h"
+#define showNowSave @"正在保存中"
+#define showSaveSuccess @"保存图片成功!"
+#define showSaveFail @"内存不够或者没有开启权限"
+#define showNoDraw @"请绘制图片"
+#define showToAgo @"已到首页"
+
+#endif

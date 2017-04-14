@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="l4f-Uk-IkI">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Yng-eC-j25">
+            <objects>
+                <navigationController id="l4f-Uk-IkI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hbh-GQ-w9r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Awt-nE-0cs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OlS-8k-IMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-385" y="267"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +32,120 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cqw-rD-tSX">
+                                <rect key="frame" x="10" y="550" width="73" height="30"/>
+                                <color key="backgroundColor" red="0.93014838280840184" green="0.94453721405569691" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IIG-e9-Ehd"/>
+                                    <constraint firstAttribute="width" constant="73" id="gnz-Ot-lUi"/>
+                                </constraints>
+                                <state key="normal" title="上一个">
+                                    <color key="titleColor" red="0.3587619192434669" green="0.20023093178937335" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AlS-U6-dCp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPk-R7-SBo">
+                                <rect key="frame" x="264" y="550" width="73" height="30"/>
+                                <color key="backgroundColor" red="0.93014838280000001" green="0.94453721410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="raE-a0-OyX"/>
+                                    <constraint firstAttribute="width" constant="73" id="yFe-EP-d0o"/>
+                                </constraints>
+                                <state key="normal" title="清除">
+                                    <color key="titleColor" red="1" green="0.32426011328019488" blue="0.44881664413445366" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cleanAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hDn-UW-lk9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lO8-cU-1Kj">
+                                <rect key="frame" x="517" y="550" width="73" height="30"/>
+                                <color key="backgroundColor" red="0.93014838280000001" green="0.94453721410000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="1w0-lh-doc"/>
+                                    <constraint firstAttribute="height" constant="30" id="jNe-Ut-252"/>
+                                </constraints>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" red="0.97399952170111148" green="0.26545337449123774" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZBc-Bs-TuN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lh7-pd-bku">
+                                <rect key="frame" x="10" y="86" width="80" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="FXx-Vj-kvs"/>
+                                    <constraint firstAttribute="height" constant="30" id="UZL-TZ-NCx"/>
+                                </constraints>
+                                <state key="normal" title="线条宽度">
+                                    <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="lineWidth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oEb-uj-csc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMc-gQ-UNJ">
+                                <rect key="frame" x="510" y="86" width="80" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="线条颜色">
+                                    <color key="titleColor" red="1" green="0.21036046486941795" blue="0.30396417168205847" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="lineColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RnH-ug-ch6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kvs-Ah-Yf2">
+                                <rect key="frame" x="260" y="86" width="80" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="相册图片">
+                                    <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="albumImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RKG-yd-JAq"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bra-JU-mqH" customClass="DrawView">
+                                <rect key="frame" x="10" y="126" width="580" height="414"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84017906656475905" green="1" blue="0.82702052153892336" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yMc-gQ-UNJ" firstAttribute="height" secondItem="Lh7-pd-bku" secondAttribute="height" id="0ae-qA-xu3"/>
+                            <constraint firstItem="kvs-Ah-Yf2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2X9-bd-hw2"/>
+                            <constraint firstAttribute="trailing" secondItem="bra-JU-mqH" secondAttribute="trailing" constant="10" id="614-gv-K1K"/>
+                            <constraint firstItem="yMc-gQ-UNJ" firstAttribute="width" secondItem="kvs-Ah-Yf2" secondAttribute="width" id="6FL-cM-iVw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lO8-cU-1Kj" secondAttribute="bottom" constant="20" id="Arz-qZ-6V8"/>
+                            <constraint firstAttribute="trailing" secondItem="lO8-cU-1Kj" secondAttribute="trailing" constant="10" id="EEr-7I-KLh"/>
+                            <constraint firstItem="yMc-gQ-UNJ" firstAttribute="height" secondItem="kvs-Ah-Yf2" secondAttribute="height" id="Grs-Q3-Uca"/>
+                            <constraint firstAttribute="trailing" secondItem="yMc-gQ-UNJ" secondAttribute="trailing" constant="10" id="NC3-g7-cXA"/>
+                            <constraint firstItem="ZPk-R7-SBo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OZw-3b-OIV"/>
+                            <constraint firstItem="cqw-rD-tSX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="RV8-6G-6gG"/>
+                            <constraint firstItem="yMc-gQ-UNJ" firstAttribute="centerY" secondItem="kvs-Ah-Yf2" secondAttribute="centerY" id="VMz-bH-XMA"/>
+                            <constraint firstItem="Lh7-pd-bku" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="VQg-4L-wij"/>
+                            <constraint firstItem="yMc-gQ-UNJ" firstAttribute="centerY" secondItem="Lh7-pd-bku" secondAttribute="centerY" id="Zex-cb-Mfr"/>
+                            <constraint firstItem="bra-JU-mqH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="ajE-jC-tUX"/>
+                            <constraint firstItem="yMc-gQ-UNJ" firstAttribute="width" secondItem="Lh7-pd-bku" secondAttribute="width" id="bs6-jK-Lsp"/>
+                            <constraint firstItem="Lh7-pd-bku" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="ebA-F8-QF7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZPk-R7-SBo" secondAttribute="bottom" constant="20" id="lxS-ZM-rfq"/>
+                            <constraint firstItem="bra-JU-mqH" firstAttribute="top" secondItem="Lh7-pd-bku" secondAttribute="bottom" constant="10" id="mc7-KG-ahR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cqw-rD-tSX" secondAttribute="bottom" constant="20" id="qFj-e1-aSv"/>
+                            <constraint firstItem="cqw-rD-tSX" firstAttribute="top" secondItem="bra-JU-mqH" secondAttribute="bottom" constant="10" id="riH-8j-bDL"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="IeL-W2-BgB"/>
+                    <connections>
+                        <outlet property="cusView" destination="bra-JU-mqH" id="zXX-Ft-ZJS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="345" y="267"/>
         </scene>
     </scenes>
 </document>

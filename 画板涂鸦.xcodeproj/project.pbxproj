@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04527F951C85242200E59C27 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04527F901C85242200E59C27 /* MBProgressHUD.bundle */; };
+		04527F961C85242200E59C27 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 04527F921C85242200E59C27 /* MBProgressHUD.m */; };
+		04527F971C85242200E59C27 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 04527F941C85242200E59C27 /* MBProgressHUD+MJ.m */; };
 		04BC52681C8437D00076C89B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC52671C8437D00076C89B /* main.m */; };
 		04BC526B1C8437D00076C89B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC526A1C8437D00076C89B /* AppDelegate.m */; };
 		04BC526E1C8437D00076C89B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC526D1C8437D00076C89B /* ViewController.m */; };
 		04BC52711C8437D00076C89B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BC526F1C8437D00076C89B /* Main.storyboard */; };
 		04BC52731C8437D00076C89B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BC52721C8437D00076C89B /* Assets.xcassets */; };
 		04BC52761C8437D00076C89B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BC52741C8437D00076C89B /* LaunchScreen.storyboard */; };
+		04BC527F1C843B300076C89B /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC527E1C843B300076C89B /* DrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04527F901C85242200E59C27 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		04527F911C85242200E59C27 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		04527F921C85242200E59C27 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		04527F931C85242200E59C27 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		04527F941C85242200E59C27 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		04527F981C85243A00E59C27 /* SetFile.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetFile.pch; sourceTree = "<group>"; };
 		04BC52631C8437D00076C89B /* 画板涂鸦.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "画板涂鸦.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BC52671C8437D00076C89B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04BC52691C8437D00076C89B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +36,8 @@
 		04BC52721C8437D00076C89B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BC52751C8437D00076C89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BC52771C8437D00076C89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BC527D1C843B300076C89B /* DrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		04BC527E1C843B300076C89B /* DrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +51,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04527F8B1C8523D300E59C27 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				04527F8F1C85241500E59C27 /* MBProgressHUD */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		04527F8C1C8523D900E59C27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04BC527D1C843B300076C89B /* DrawView.h */,
+				04BC527E1C843B300076C89B /* DrawView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		04527F8D1C8523E200E59C27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04BC526C1C8437D00076C89B /* ViewController.h */,
+				04BC526D1C8437D00076C89B /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		04527F8E1C8523EA00E59C27 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04BC52691C8437D00076C89B /* AppDelegate.h */,
+				04BC526A1C8437D00076C89B /* AppDelegate.m */,
+				04BC526F1C8437D00076C89B /* Main.storyboard */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		04527F8F1C85241500E59C27 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				04527F901C85242200E59C27 /* MBProgressHUD.bundle */,
+				04527F911C85242200E59C27 /* MBProgressHUD.h */,
+				04527F921C85242200E59C27 /* MBProgressHUD.m */,
+				04527F931C85242200E59C27 /* MBProgressHUD+MJ.h */,
+				04527F941C85242200E59C27 /* MBProgressHUD+MJ.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		04BC525A1C8437D00076C89B = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +118,10 @@
 		04BC52651C8437D00076C89B /* 画板涂鸦 */ = {
 			isa = PBXGroup;
 			children = (
-				04BC52691C8437D00076C89B /* AppDelegate.h */,
-				04BC526A1C8437D00076C89B /* AppDelegate.m */,
-				04BC526C1C8437D00076C89B /* ViewController.h */,
-				04BC526D1C8437D00076C89B /* ViewController.m */,
-				04BC526F1C8437D00076C89B /* Main.storyboard */,
-				04BC52721C8437D00076C89B /* Assets.xcassets */,
-				04BC52741C8437D00076C89B /* LaunchScreen.storyboard */,
-				04BC52771C8437D00076C89B /* Info.plist */,
+				04527F8B1C8523D300E59C27 /* Library */,
+				04527F8E1C8523EA00E59C27 /* Main */,
+				04527F8C1C8523D900E59C27 /* View */,
+				04527F8D1C8523E200E59C27 /* Controller */,
 				04BC52661C8437D00076C89B /* Supporting Files */,
 			);
 			path = "画板涂鸦";
@@ -74,7 +130,11 @@
 		04BC52661C8437D00076C89B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04BC52721C8437D00076C89B /* Assets.xcassets */,
+				04BC52741C8437D00076C89B /* LaunchScreen.storyboard */,
+				04BC52771C8437D00076C89B /* Info.plist */,
 				04BC52671C8437D00076C89B /* main.m */,
+				04527F981C85243A00E59C27 /* SetFile.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -110,6 +170,7 @@
 				TargetAttributes = {
 					04BC52621C8437D00076C89B = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4ETV77S77W;
 					};
 				};
 			};
@@ -137,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BC52761C8437D00076C89B /* LaunchScreen.storyboard in Resources */,
+				04527F951C85242200E59C27 /* MBProgressHUD.bundle in Resources */,
 				04BC52731C8437D00076C89B /* Assets.xcassets in Resources */,
 				04BC52711C8437D00076C89B /* Main.storyboard in Resources */,
 			);
@@ -149,8 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04527F971C85242200E59C27 /* MBProgressHUD+MJ.m in Sources */,
 				04BC526E1C8437D00076C89B /* ViewController.m in Sources */,
 				04BC526B1C8437D00076C89B /* AppDelegate.m in Sources */,
+				04527F961C85242200E59C27 /* MBProgressHUD.m in Sources */,
+				04BC527F1C843B300076C89B /* DrawView.m in Sources */,
 				04BC52681C8437D00076C89B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +326,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4ETV77S77W;
+				GCC_PREFIX_HEADER = "画板涂鸦/SetFile.pch";
 				INFOPLIST_FILE = "画板涂鸦/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gdd.----";
@@ -272,6 +339,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4ETV77S77W;
+				GCC_PREFIX_HEADER = "画板涂鸦/SetFile.pch";
 				INFOPLIST_FILE = "画板涂鸦/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gdd.----";
@@ -298,6 +367,7 @@
 				04BC527C1C8437D00076C89B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

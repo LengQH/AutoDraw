@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  画板涂鸦
 //
-//  Created by ma c on 16/2/29.
+//  Created by 冷求慧 on 16/2/29.
 //  Copyright © 2016年 gdd. All rights reserved.
 //
 
